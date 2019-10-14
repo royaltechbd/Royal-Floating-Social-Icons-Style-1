@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Royal Floating Social Icons Style 1</title>
+<style type="text/css">
+ul#social {
+ position: fixed;
+ margin: 0px;
+ padding: 0px;
+ top: 10px;
+ left: 0px;
+ list-style: none;
+ z-index:9999;
+}
+ul#social li {
+ width: 100px;
+}
+ul#social li a {
+ display: block;
+ margin-left: -2px;
+ width: 100px;
+ height: 70px;
+ background-color:#fff;
+ background-repeat:no-repeat;
+ background-position:center center;
+ border:1px solid #AFAFAF;
+ -moz-border-radius:0px 10px 10px 0px;
+ -webkit-border-bottom-right-radius: 10px;
+ -webkit-border-top-right-radius: 10px;
+ -khtml-border-bottom-right-radius: 10px;
+ -khtml-border-top-right-radius: 10px;
+ -moz-box-shadow: 0px 4px 3px #000;
+ -webkit-box-shadow: 0px 4px 3px #000;
+}
+ul#social .twitter a{
+ background:#0F96C6 url(http://3.bp.blogspot.com/-1wb-O4GG6DQ/UPFOe03M-lI/AAAAAAAAA4g/1015-y7FaYU/s1600/Twitter.png)no-repeat;
+background-position:center center;
+}
+ul#social .googleplus a {
+ background:#D73D27 url(http://3.bp.blogspot.com/-1mYMKQENXdI/UPFOeK31VzI/AAAAAAAAA4k/w2Qk48tpleQ/s1600/GOOGLE+PLus.png)no-repeat;
+background-position:center center;
+}
+ul#social .facebook a {
+ background:#1A4B97 url(http://1.bp.blogspot.com/-3M1F3Y29Yoc/UPFOeAAUFvI/AAAAAAAAA4c/ALvfOPDwJ-g/s1600/Facebook.png)no-repeat;
+background-position:center center;
+}
+ul#social .rss a {
+ background:#FAAE17 url(http://4.bp.blogspot.com/-twR0g7wotpE/UPFOfFtFOuI/AAAAAAAAA4o/uJMUf9hjRco/s1600/rss.png)no-repeat;
+background-position:center center;
+}
+ 
+ul#social .pinterest a {
+ background:#963336 url(http://2.bp.blogspot.com/-xgOrG4ysqyM/UPFOeKFKMtI/AAAAAAAAA4Y/i_jnKpHsK24/s1600/Pinterest.png)no-repeat;
+background-position:center center;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript'>
+$(function () {
+ $('#social a').stop().animate({
+ 'marginLeft': '-85px'
+ }, 1000);
+ 
+$('#social > li').hover(
+ function () {
+ $('a', $(this)).stop().animate({
+ 'marginLeft': '-2px'
+ }, 200);
+ },
+ function () {
+ $('a', $(this)).stop().animate({
+ 'marginLeft': '-85px'
+ }, 200);
+ }
+ );
+});
+</script>	
+</head>
+<body>
+<ul id='social'>
+ <li class='twitter'><a href='#' title='Twitter'></a></li>
+ <li class='googleplus'><a href='#' title='Google Plus'></a></li>
+ <li class='facebook'><a href='#' title='Facebook'></a></li>
+ <li class='rss'><a href='#' title='Rss'></a></li>
+ <li class='pinterest'><a href='#' title='Pinterest'></a></li>
+</ul>	
+</body>
+</html>
